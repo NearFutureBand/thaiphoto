@@ -1,2 +1,0 @@
-# thaiphoto
-website for AS
