@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+@colPr: #fff;
+@colSec: rgba(68, 68, 68, 0.8);
+@colBr: #ec3237;
+@padderMainToPortfolio: 0px;
+
+/*general*/
+*{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 16px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -icab-perspective: all .6s ease;
+    -khtml-perspective: all .6s ease;
+    transition: all .6s ease;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+body,html{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #efefef;
+}
+h1, h2, h3, h4, a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+h1{
+    font-size: 22px;
+    margin: 10px 0px;
+}
+a{
+    text-decoration: none;
+    color: @colSec;
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+.link{
+    cursor: pointer;
+}
+
+.mainImage, .secondImage, .thirdImage{
+    background-repeat: no-repeat;
+}
+.mainImage{
+    height: 100vh;
+    background-image: url(../content/1.jpg);
+    background-position: 50% 50%;
+    background-size: 100%;
+    @media screen and (max-width: 768px){
+        background-image: url(../content/1sm.jpg);
+        background-position: 55% 40%;
+        background-size: cover;
+    }
+}
+.secondImage{
+    height: 100vh;
+    background-image: url(../content/2.jpg);
+    background-position: 50% 30%;
+    @media screen and (max-width: 768px){
+        background-image: url(../content/2sm.jpg);
+        background-position: 50% -20%;
+    }
+}
+.thirdImage{
+    background-image: url(../content/3.jpg);
+    background-position: 70% 40%;
+    @media screen and (max-width: 768px){
+        background-image: url(../content/3sm.jpg);
+        background-position: 60% 40%;
+    }
+}
+
+/*blocks*/
+#about, #work, #portfolio, #contacts{
+    padding: 30px 0px;
+}
+#work, #feedback{
+    background-color: #efefef;
+}
+
+.navigation{
+    position: fixed;
+    top:0;
+    font-size: 15px;
+    text-transform: uppercase;
+    .row{
+        @media screen and (max-width: 1222px){
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        img{
+            max-height: 40px;
+        }
+    }
+    .buttons{
+        padding-top: 10px;
+        min-width: 750px;
+        text-align: center;
+    }
+    div.openButton{
+        padding: 10px;
+    }
+    .buttons .button{
+        
+        @media screen and (max-width: 768px){
+            display: none;
+            padding: 10px;
+        }
+        /*@media screen and (min-width: 1253px){
+            padding: 10px;
+        }
+        @media screen and (min-width: 1377px){
+            padding: 10px;
+        }*/
+        @media screen and (min-width: 845px){
+            padding: 10px;
+        }
+    }
+    .buttons .openButton{
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+        display: none;
+    }
+}
+
+.about{
+    .row{
+        padding: 0;
+    }
+    .row>div{
+        padding: 10px;
+    }
+    img{
+        display: flex;
+        justify-content: center;
+    }
+    .textAboutMe{
+        text-align: justify;
+    }
+}
+
+.work{
+    .title{
+        padding: 15px;
+        text-align: center;
+    }
+    .types>div{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .name{
+        text-transform: uppercase;
+        text-align: center;
+        h2{
+            font-size: 20px;
+        }
+    }
+    .pic>img{
+        width: 100%;
+    }
+    .descr{
+        border: 1px solid @colSec;
+        border-radius: 5px;
+        height: 400px;
+    }
+    .types>div>div{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        //width: 100%;
+    }
+}
+
+.price{
+    margin-bottom: 20px;
+    .row>div{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .title h1{
+        text-align: center;
+        color: @colSec;
+        font-size: 20px;
+    }
+    .pr{
+        padding: inherit;
+        border: 1px solid @colBr;
+        border-radius: 5px;
+    }
+    .order{
+        padding: 10px;
+        width: 50%;
+        text-align: center;
+        margin: 10px auto;
+        border: 1px solid rgba(68, 68, 68, 0.8);
+        border-radius: 5px;
+    }
+    .order:hover{
+        border: 1px solid @colBr;
+        border-radius: 5px;
+    }
+}
+
+.portfolio{
+    .thumb{
+        padding: 15px;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .hidden{
+        display: none;
+    }
+}
+#portfolio{
+    .title{
+        padding: 10px;
+        h1{
+            text-align: center;
+        }
+    }
+}
+
+.feedback{
+    padding: 20px;
+    .fb{
+        padding: 10px;
+        .text{
+            text-align: justify;
+            padding: 15px;
+            p{
+                margin: 0;
+            }
+            h1{
+                margin: 0px 0px 10px 0px;
+            }
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+            border-radius: 50%;
+        }
+    }
+}
+#feedback .title{
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.map{
+    padding: 0;
+    @media screen and (max-width: 768px){
+        padding: 10px;
+    }
+    .title h1{
+        text-align: center;
+    }
+}
+
+footer{
+    color: @colPr;
+    div, a.linkToDialog{
+        text-align: center;
+        margin: 10px auto;
+        width: 50%;
+        padding: 5px;
+        background-color: rgba(255,255,255,0.3);
+        @media screen and (max-width: 768px){
+            width: 90%;
+        }
+    }
+    .socialMedia{
+        display: flex;
+        justify-content: center;
+        a{
+            color: @colPr;
+            margin: 4px 30px;
+        }
+        .fab{
+            font-size: 40px;
+        }
+        .fab:hover{
+            cursor: pointer;
+        }
+        .fa-vk:hover{
+            color: #507299;
+        }
+        .fa-instagram:hover{
+            background: -webkit-linear-gradient(bottom left, #fab21f, #e90006, #ba0197);
+            background: -o-linear-gradient(bottom left, #fab21f, #e90006, #ba0197);
+            background: -moz-linear-gradient(bottom left, #fab21f, #e90006, #ba0197);
+            background: linear-gradient(to top right, #fab21f, #e90006, #ba0197);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -o-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .fa-facebook-f:hover{
+            color: #3b5998;
+        }
+    }
+    .phoneNumber, .email{
+        text-align: center;
+    }
+    .linkToDialog{
+        color: @colPr;
+        display: block; 
+    }
+    a.linkToDialog:hover{
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+/*themes*/
+.theme1{
+    color: @colSec;
+    background-color: @colPr;
+    a{
+        color: @colSec;
+    }
+    a.linkBg:hover{
+        background-color: @colBr;
+    }
+    a.link:hover{
+        color: @colBr;
+    }
+}
+.theme2{
+    color: @colPr;
+    background-color: @colSec;
+    button,textarea,input{
+        color: @colPr;
+        background-color: @colSec;
+    }
+    a{
+        color: @colPr;
+    }
+    .link:hover{
+        color: @colBr;
+    }
+}
+.theme3{
+    color: @colSec;
+    background-color: @colBr;
+    a{
+        color: @colSec;
+    }
+    a.linkBg:hover{
+        background-color: @colPr;
+    }
+    a.link:hover{
+        color: @colPr;
+    }
+}
