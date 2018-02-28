@@ -15,22 +15,6 @@
 <body>
     <header class="mainImage" id="main"></header>
     
-    <!--<div class="container-fluid theme1" id="about">
-        <div class="container about">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h1>ОБО МНЕ</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                         <div class="col-lg-5 col-md-5 col-sm-12 myPhoto"><img src="content/about/1.jpg"></div>
-                         <div class="col-lg-7 col-md-7 col-sm-12 textAboutMe">
-                             <p>Очень важно выбрать правильного фотографа. Ведь именно с ним Вам предстоит провести один из самых важных дней в вашей жизни — Свадьбу. Со мной Вам не нужно будет ничего изображать. Этот день мы просто проживем вместе, наслаждаясь каждым моментом. Самыми ценными являются те фотографии, которые способны перенести Вас в тот сказочный день и погрузить в атмосферу счастья. У меня Вы покупаете не фотографии — хронологию дня. У меня Вы покупаете возможность повторно испытать те искренние и волнующие эмоции, которые вы испытывали на свадьбе.</p>
-                        </div>
-                    </div>
-                </div>
-    </div>-->
-    
     <div class="container-fluid theme1" id="work">
         <div class="container work">
             <div class="row">
@@ -427,18 +411,15 @@
                     arrows: true,
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    
                 });
             } else {
                 $(".feedback").slick({
                     arrows: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    
                 });
-                
             }
-            if(!window.matchMedia("(min-width: 844px)").matches){
+            if(!window.matchMedia("(min-width: 768px)").matches){
                 $("nav .buttons").hover(function(){
                     $("nav .button").css("display","block");
                 }, function(){
@@ -461,11 +442,6 @@
                     scrollTop: $("#main").offset().top
                 }, 500);
             });
-            /*$("nav .button:nth-of-type(2)").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#about").offset().top-60
-                }, 500);
-            });*/
             $("nav .button:nth-of-type(3)").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#work").offset().top-60
