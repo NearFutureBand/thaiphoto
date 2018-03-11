@@ -61,27 +61,174 @@ img{
     height: 100vh;
     background-image: url(../content/1.jpg);
     background-position: 50% 50%;
-    background-size: 100%;
-    @media screen and (max-width: 768px){
+    background-size: cover;
+    @media screen and(max-width: 768px){
         background-image: url(../content/1sm.jpg);
-        background-position: 55% 40%;
-        background-size: cover;
-    }
-    @media screen and (min-width: 769px){
-        background-image: url(../content/1sm.jpg);
-        background-position: 50% 50%;
-        background-size: 150%;
-    }
-    @media screen and (min-width: 992px){
-        background-image: url(../content/1mid.jpg);
-        background-position: 50% 70%;
-        background-size: 120%;
-    }
-    @media screen and (min-width: 1200px){
-        background-image: url(../content/1.jpg);
         background-position: 50% 50%;
         background-size: cover;
     }
+    .text1{
+        font-size: 20px;
+        color: black;
+        display: inline-block;
+        position: absolute;
+        line-height: 17px;
+        left: 10%;
+        top: 10%;
+        div:nth-of-type(1){
+            margin-left: -46px;
+            font-size: 30px;
+            line-height: 24px;
+            @media screen and(max-width: 991px){
+                margin-left: -40px;
+                font-size: 24px;
+                line-height: 18px;
+            }
+        }
+        div:nth-of-type(2){
+            font-size: 30px;
+            line-height: 24px;
+            margin-left: -10px;
+            @media screen and(max-width: 991px){
+                font-size: 24px;
+                line-height: 18px;
+                margin-left: -4px;
+            }
+        }
+        div:nth-of-type(3){
+            font-size: 58px;
+            line-height: 42px;
+            margin-top: -23px;
+            margin-left: 6px;
+            @media screen and(max-width: 991px){
+                font-size: 52px;
+                line-height: 36px;
+                margin-top: -17px;
+                margin-left: 10px;
+            }
+        }
+        @media screen and(max-width: 1142px){
+            left: 21%;
+            top: 21%;
+        }
+        @media screen and(max-width: 768px){
+            left: 21%;
+            top: 18%;
+        }
+    }
+    .text2{
+        font-size: 20px;
+        color: rgba(255,255,255,0.9);
+        display: inline-block;
+        position: relative;
+        line-height: 17px;
+        left: 24%;
+        top: 58%;
+        div:nth-of-type(1){
+            font-size: 27px;
+            line-height: 24px;
+            @media screen and(max-width: 991px){
+                font-size: 21px;
+                line-height: 18px;
+            }
+        }
+        div:nth-of-type(2){
+            font-size: 18px;
+            line-height: 15px;
+            @media screen and(max-width: 991px){
+                font-size: 12px;
+                line-height: 9px;
+            }
+        }
+        div:nth-of-type(3){
+            font-size: 39px;
+            line-height: 32px;
+            @media screen and(max-width: 991px){
+                font-size: 33px;
+                line-height: 26px;
+            }
+        }
+        div:nth-of-type(4){
+            float: right;
+            font-size: 22px;
+            line-height: 18px;
+            @media screen and(max-width: 991px){
+                font-size: 16px;
+                line-height: 12px;
+            }
+        }
+        @media screen and(max-width: 768px){
+            left: 17%;
+            top: 58%;
+        }
+        /*@media screen and(max-width: 768px){
+            left: 56%;
+            top: 70%;
+        }*/
+    }
+    .text3{
+        font-size: 20px;
+        color: rgba(255,255,255,0.9);
+        display: inline-block;
+        position: absolute;
+        line-height: 17px;
+        left: 59%;
+        top: 85%;
+        div:nth-of-type(1){
+            font-size: 19px;
+            line-height: 17px;
+            margin-left: 75px;
+            @media screen and(max-width: 991px){
+                font-size: 13px;
+                line-height: 11px;
+                margin-left: 69px;
+            }
+            @media screen and(max-width: 768px){
+                font-size: 10px;
+                line-height: 9px;
+                margin-left: 62px;
+            }
+        }
+        div:nth-of-type(2){
+            font-size: 28px;
+            line-height: 22px;
+            margin-left: 4px;
+            @media screen and(max-width: 991px){
+                font-size: 22px;
+                line-height: 20px;
+                margin-left: 12px;
+            }
+            @media screen and(max-width: 768px){
+                font-size: 17px;
+                line-height: 17px;
+                margin-left: 19px;
+            }
+        }
+        div:nth-of-type(3){
+            font-size: 46px;
+            line-height: 33px;
+            margin-left: 71px;
+            @media screen and(max-width: 991px){
+                font-size: 40px;
+                line-height: 29px;
+                margin-left: 65px;
+            }
+            @media screen and(max-width: 768px){
+                font-size: 31px;
+                line-height: 22px;
+                margin-left: 60px;
+            }
+        }
+        @media screen and(max-width: 1142px){
+            left: 54%;
+            top: 85%;
+        }
+        @media screen and(max-width: 768px){
+            left: 21%;
+            top: 79%;
+        }
+    }
+    
 }
 .secondImage{
     height: 100vh;
