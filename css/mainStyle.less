@@ -27,14 +27,14 @@ body,html{
     box-sizing: border-box;
 }
 body{
-    -ms-overflow-style: none;
-    overflow-y: -moz-hidden-unscrollable;
+    //-ms-overflow-style: none;
+    //overflow-y: -moz-hidden-unscrollable;
     overflow-x: hidden;
     background-color: #efefef;
 }
-body::-webkit-scrollbar{
+/*body::-webkit-scrollbar{
     width: 0;
-}
+}*/
 
 h1, h2, h3, h4, h5, h6, a{
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -372,6 +372,11 @@ nav.navbar{
     }
     .hidden{
         display: none;
+    }
+    .vertImage{
+        img{
+            width: 45%;
+        }    
     }
 }
 #portfolio{
