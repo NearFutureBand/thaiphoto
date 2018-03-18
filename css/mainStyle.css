@@ -397,6 +397,9 @@ nav.navbar li {
 .price .card a {
   font-size: 22px;
 }
+.portfolio .vertImage img {
+  width: 45%;
+}
 .portfolio .thumb {
   padding: 15px;
 }
@@ -406,9 +409,6 @@ nav.navbar li {
 }
 .portfolio .hidden {
   display: none;
-}
-.portfolio .vertImage img {
-  width: 45%;
 }
 #portfolio .title {
   padding: 10px;
