@@ -308,9 +308,13 @@ nav.navbar{
 
 .work{
     .types{
-        padding: 20px 0px;
+        padding: 40px 0px;
         .card{
+            border: none;
             background-color: #efefef;
+            .card-body{
+                padding: 10px;
+            }
             h5{
                 text-align: center;
             }
@@ -327,12 +331,21 @@ nav.navbar{
         background-color: transparent;
         border-color: @colBr;
         width: 100%;
-        li.list-group-item{
+        ul.list-group{
+            padding-left: 30px;
+        }
+        li{
+            list-style: circle;
+            list-style-type: disc;
+            border: none;
             padding: 5px 20px;
             background-color: transparent;
         }
         a{
             font-size: 22px;
+        }
+        p.text{
+            padding: 10px 0px 0px 40px;
         }
     }
     /*.row>div{
