@@ -27,15 +27,22 @@ body,html{
     box-sizing: border-box;
 }
 body{
+    -ms-overflow-style: none;
+    overflow-y: -moz-hidden-unscrollable;
     overflow-x: hidden;
     background-color: #efefef;
 }
-h1, h2, h3, h4, a{
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a{
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 h1{
-    font-size: 22px;
+    //font-size: 22px;
     margin: 10px 0px;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -50,7 +57,8 @@ img{
     height: auto;
     width: auto\9;
 }
-.link{
+.link:hover{
+    color: @colBr;
     cursor: pointer;
 }
 
@@ -229,7 +237,6 @@ img{
             top: 79%;
         }
     }
-    
 }
 .secondImage{
     height: 100vh;
@@ -257,59 +264,30 @@ img{
     background-color: #efefef;
 }
 
-.navigation{
-    position: fixed;
-    top:0;
-    font-size: 15px;
-    text-transform: uppercase;
-    .row{
-        @media screen and (max-width: 1222px){
-            display: flex;
-            justify-content: center;
-        }
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+nav.navbar{
+    padding: 0px 0px 0px 10%;
+    .navbar-brand{
         img{
             max-height: 40px;
         }
     }
-    .buttons{
-        padding-top: 10px;
-        min-width: 750px;
-        text-align: center;
-    }
-    div.openButton{
-        padding: 10px;
-    }
-    .buttons .button{
-        
-        @media screen and (max-width: 768px){
-            display: none;
-            padding: 10px;
-        }
-        @media screen and (max-width: 844px){
-            padding: 10px;
-        }
-        /*@media screen and (min-width: 1253px){
-            padding: 10px;
-        }
-        @media screen and (min-width: 1377px){
-            padding: 10px;
-        }*/
-        @media screen and (min-width: 845px){
-            padding: 10px;
+    #navbarSupportedContent{
+        @media screen and (min-width: 1323px){
+            padding-left:10%;
         }
     }
-    .buttons .openButton{
-        @media screen and (max-width: 768px){
-            display: block;
-        }
-        display: none;
+    ul{
+        width: 100%;
     }
+    li{
+        margin-right: 3.5%;
+        margin-left: 3.5%;
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+            margin-right: 1.5%;
+            margin-left: 1.5%;
+        }
+    }
+    
 }
 
 .about{
@@ -329,46 +307,41 @@ img{
 }
 
 .work{
-    .title{
-        padding: 15px;
-        text-align: center;
-    }
-    .types>div{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .name{
-        text-transform: uppercase;
-        text-align: center;
-        h2{
-            font-size: 20px;
+    .types{
+        padding: 20px 0px;
+        .card{
+            background-color: #efefef;
+            h5{
+                text-align: center;
+            }
         }
-    }
-    .pic>img{
-        width: 100%;
-    }
-    .descr{
-        border: 1px solid @colSec;
-        border-radius: 5px;
-        height: 400px;
-    }
-    .types>div>div{
-        margin-bottom: 10px;
-        margin-top: 10px;
-        //width: 100%;
     }
 }
 
 .price{
     margin-bottom: 20px;
-    .row>div{
+    .card{
+        .card-title{
+            text-align: center;
+        }
+        background-color: transparent;
+        border-color: @colBr;
+        width: 100%;
+        li.list-group-item{
+            padding: 5px 20px;
+            background-color: transparent;
+        }
+        a{
+            font-size: 22px;
+        }
+    }
+    /*.row>div{
         margin-bottom: 10px;
         margin-top: 10px;
     }
     .title h1{
         text-align: center;
         color: @colSec;
-        font-size: 20px;
     }
     .pr{
         padding: inherit;
@@ -386,7 +359,7 @@ img{
     .order:hover{
         border: 1px solid @colBr;
         border-radius: 5px;
-    }
+    }*/
 }
 
 .portfolio{
@@ -420,7 +393,8 @@ img{
             p{
                 margin: 0;
             }
-            h1{
+            h3{
+                text-align: center;
                 margin: 0px 0px 10px 0px;
             }
         }
@@ -442,9 +416,6 @@ img{
     padding: 0;
     @media screen and (max-width: 768px){
         padding: 10px;
-    }
-    .title h1{
-        text-align: center;
     }
 }
 
