@@ -1,0 +1,47 @@
+.intro, .types, .price, .portfolio, .feedback, .contact, .map{
+    background-color: aliceblue;
+    align-items: center;
+    width: 100%;
+}
+
+.page{
+    width: @page-width;
+    //padding: @padding;
+    .content{
+        width: 100%;
+    }
+}
+
+.intro{
+    height: 100vh;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.types{
+    //height: 80vh;
+    .content{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+
+    }
+}
+
+.pause{
+    height: 100vh;
+    .background-image{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url(../img/2.jpg);
+        background-size: cover;
+        z-index: -1;   
+    }
+}
+
