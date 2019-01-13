@@ -21,9 +21,22 @@ class App extends Component {
           <div className="page">
             <h1>TYPES OF SHOOTING</h1>
             <div className="content">
-              <div>family shooting</div>
-              <div>lovestory</div>
-              <div>wedding shooting</div>
+
+              <div className="card">
+                <h3 className="title">family shooting</h3>
+                <div className="img"></div>
+              </div>
+
+              <div className="card">
+                <h3 className="title">lovestory</h3>
+                <div className="img"></div>
+              </div>
+
+              <div className="card">
+                <h3 className="title">wedding shooting</h3>
+                <div className="img"></div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -31,6 +44,40 @@ class App extends Component {
         <div className="price">
           <div className="page">
             <h1>PRICE</h1>
+            <div className="content">
+
+              <div className="card-wrapper">
+                <div className="card">
+                  <h3 className="title"></h3>
+                  <div className="descr"></div>
+                  <ul className="list"></ul>
+                  <h3 className="price"></h3>
+                  <a href="#">ORDER</a>
+                </div>
+              </div>
+
+              <div className="card-wrapper">
+                <div className="card">
+                  <h3 className="title"></h3>
+                  <div className="descr"></div>
+                  <ul className="list"></ul>
+                  <h3 className="price"></h3>
+                  <a href="#">ORDER</a>
+                </div>
+              </div>
+
+              <div className="card-wrapper">
+                <div className="card">
+                  <h3 className="title"></h3>
+                  <div className="descr"></div>
+                  <ul className="list"></ul>
+                  <h3 className="price"></h3>
+                  <a href="#">ORDER</a>
+                </div>
+              </div>
+              
+            
+            </div>
           </div>
           
         </div>

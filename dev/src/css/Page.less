@@ -14,19 +14,50 @@
 
 .intro{
     height: 100vh;
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/backgrounds/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .types{
-    //height: 80vh;
-    .content{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-
+  //height: 80vh;
+  padding: @padding*2 0;
+  .content{
+    padding: @padding*2 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    .card{
+      width: 30%;
+      align-items: center;
+      .title{
+        padding: @padding 0;
+        color: @text-secondary;
+      }
+      .img{
+        width: 90%;
+        height: 13rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+        
     }
+    .card:nth-of-type(1){
+      .img{
+        background-image: url(../img/other/family.jpg);
+      }
+    }
+    .card:nth-of-type(2){
+      .img{
+        background-image: url(../img/other/love-story.jpg);
+      }
+    }
+    .card:nth-of-type(3){
+      .img{
+        background-image: url(../img/other/wedding.jpg);
+      }
+    }
+  }   
 }
 
 .pause{
@@ -39,7 +70,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background-image: url(../img/2.jpg);
+        background-image: url(../img/backgrounds/2.jpg);
         background-size: cover;
         z-index: -1;   
     }
